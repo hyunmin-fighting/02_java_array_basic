@@ -1,5 +1,5 @@
 package step2_01.array;
-// 210329 16:42 ~ 
+// 210329 16:42 ~ 17:20
 /*
  * # 학생성적관리 프로그램[2단계] : 학생검색
  */
@@ -46,7 +46,7 @@ public class ArrayEx05_정답 {
 
 		
 		int studentNumber;
-		int searchedIndex1;
+		int searchedIndex1 = -1;
 		
 		System.out.print("학번을 입력 : ");
 		studentNumber = scan.nextInt();
@@ -55,6 +55,7 @@ public class ArrayEx05_정답 {
 			if(studentNumber == hakbuns[i]) searchedIndex1 = i;
 		}
 		
+		System.out.println("학번 " + studentNumber + "번 학생의 성적은 " + scores[searchedIndex1] + "점 입니다.");
 		
 		
 		scan.close();
