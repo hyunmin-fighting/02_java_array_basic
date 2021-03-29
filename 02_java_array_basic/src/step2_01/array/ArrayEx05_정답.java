@@ -25,16 +25,15 @@ public class ArrayEx05_정답 {
 		
 		// 문제2) 성적을 입력받아 인덱스 출력
 		// 정답2) 성적 입력 : 11		인덱스 : 1
-		int searchedIndex = -1;
+		System.out.println();
 		System.out.print("성적 입력 : ");
 		int inputedPoint = scan.nextInt();
 		
 		for(int i = 0; i < arr.length; i++) {
 			if(inputedPoint == arr[i]) {
-				searchedIndex = i;
+				System.out.println("검색된 인덱스 : " + i);
 			}
 		}
-		System.out.println("검색된 인덱스 : " + searchedIndex);
 
 		
 		
@@ -45,18 +44,13 @@ public class ArrayEx05_정답 {
 		// 정답3) 학번 입력 : 1003	성적 : 45점
 
 		
-		int studentNumber;
-		int searchedIndex1 = -1;
-		
+		System.out.println();
 		System.out.print("학번을 입력 : ");
-		studentNumber = scan.nextInt();
+		int studentNumber = scan.nextInt();
 		
 		for(int i = 0; i < hakbuns.length; i++) {
-			if(studentNumber == hakbuns[i]) searchedIndex1 = i;
+			if(studentNumber == hakbuns[i]) System.out.println(scores[i] + "점");
 		}
-		
-		System.out.println("학번 " + studentNumber + "번 학생의 성적은 " + scores[searchedIndex1] + "점 입니다.");
-		
 		
 		scan.close();
 

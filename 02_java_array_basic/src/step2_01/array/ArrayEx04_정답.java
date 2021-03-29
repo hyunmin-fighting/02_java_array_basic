@@ -18,13 +18,10 @@ public class ArrayEx04_정답 {
 		// 문제1) arr배열에 1~100점 사이의 랜덤 정수를 5개 저장
 		// 예   1) 87, 11, 92, 14, 47
 		Random ran = new Random();
-		int ranNum = 0;
 		
 		int[] arrayRanNum = new int[5];
 		for( int i = 0; i < 5; i++) {
-			ranNum = ran.nextInt(100)+1;
-			arrayRanNum[i] = ranNum;
-
+			arrayRanNum[i] = ran.nextInt(100)+1;
 			System.out.println(arrayRanNum[i]);
 		}
 		System.out.println();
