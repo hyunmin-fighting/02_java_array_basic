@@ -1,8 +1,9 @@
 package step2_01.array;
 
+import java.util.Arrays;
 import java.util.Random;
 
-// 210329 17:39 ~ 
+// 210329 17:39 ~ 23:00
 /*
  * # OMR카드
  * 
@@ -25,6 +26,7 @@ public class ArrayEx08_정답 {
 		Random ran = new Random();
 		
 		int[] answer = {1, 3, 4, 2, 5};
+		System.out.println("answer : " + Arrays.toString(answer));
 		int[] hgd = new int[5];
 		int point = 0;
 		String[] check = new String[5];
@@ -33,6 +35,7 @@ public class ArrayEx08_정답 {
 		for(int i = 0; i < hgd.length; i++) {
 			hgd[i] = ran.nextInt(5)+1;
 		}
+		System.out.println("hgd : " + Arrays.toString(hgd));
 		
 		for(int i = 0; i < answer.length; i++) {
 			if(answer[i] == hgd[i]) {
@@ -41,7 +44,8 @@ public class ArrayEx08_정답 {
 			}
 			else check[i] = "X";
 		}
-		
+		System.out.println("정오표 : " + Arrays.toString(check));
+		System.out.println("성적 : " + point + "점");
 	}
 	
 }
