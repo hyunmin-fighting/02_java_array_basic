@@ -1,6 +1,6 @@
 package step2_01.array;
 import java.util.Arrays;
-//210330 17:16 ~ 
+//210330 17:16 ~ 20:19
 import java.util.Scanner;
 
 /*
@@ -47,7 +47,7 @@ public class ArrayEx14_정답 {
 							System.out.println(Arrays.toString(game));
 						}		
 						else{
-							System.out.println("캐릭터가 0번위치로 이동하여 종료합니다.");
+							System.out.println("캐릭터가 -1번위치로 이동하여 종료합니다.");
 							System.out.println(Arrays.toString(game));
 							isRun = false; 				
 						}
@@ -57,7 +57,7 @@ public class ArrayEx14_정답 {
 			
 			
 			else if(inputNum == 2) {
-				for (int i=0; i<7; i++) { 
+				for (int i=6; i>=0; i--) { 
 					if (game[i] == 2) {    // game배열을 0번 인덱스부터 뒤져서 캐릭터 위치를 찾는다.
 						player = i;        // 캐릭터 위치 인덱스를 플레이어에 입력한다.
 						
@@ -67,7 +67,7 @@ public class ArrayEx14_정답 {
 							System.out.println(Arrays.toString(game));
 						}		
 						else{
-							System.out.println("캐릭터가 6번위치로 이동하여 종료합니다.");
+							System.out.println("캐릭터가 7번위치로 이동하여 종료합니다.");
 							System.out.println(Arrays.toString(game));
 							isRun = false; 				
 						}
