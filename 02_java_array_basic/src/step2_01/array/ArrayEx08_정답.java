@@ -35,7 +35,7 @@ public class ArrayEx08_정답 {
 		for(int i = 0; i < hgd.length; i++) {
 			hgd[i] = ran.nextInt(5)+1;
 		}
-		System.out.println("hgd : " + Arrays.toString(hgd));
+		System.out.println("hgd    : " + Arrays.toString(hgd));
 		
 		for(int i = 0; i < answer.length; i++) {
 			if(answer[i] == hgd[i]) {
