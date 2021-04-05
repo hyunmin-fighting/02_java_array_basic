@@ -1,5 +1,8 @@
 package step2_01.array;
 
+// 210403 23:45 ~ 24:00
+
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayEx24_테스트정답1_1 {
@@ -56,14 +59,40 @@ public class ArrayEx24_테스트정답1_1 {
 
 		// 문제 5) 위 배열중 홀수의 개수 출력 
 		// 예) 홀수의 개수 : 3
+		
+		int count = 0;
+		for(int i=0; i<a.length; i++) {
+			if(a[i]%2 != 0) {
+				count++;
+			}
+		}
+		System.out.println("홀수의 개수 : " + count);
+		
 			
 		// 문제 6) a의 값중 홀수만 b에 저장 (저장위치는 a와 b의 동일한 위치에 저장)
 		// 예) b => {0, 0, 5, 3, 1}
 		int[] b = {0, 0, 0, 0, 0};
 		
+		for(int i=0; i<a.length; i++) {
+			if(a[i]%2 != 0) {
+				b[i] = a[i];
+			}
+		}
+		System.out.println(Arrays.toString(b));
+		
+		
 		// 문제 7) 다음 리스트를 이용해서 a의 값중 홀수만 c에 저장(저장위치는 앞에서부터  저장 , 3번 문제와 다름)
 		// 예) b => {5, 3, 1, 0, 0}
 		int[] c = { 0,0,0,0,0 };
+		int j = 0;
+
+		for(int i=0; i<a.length; i++) {
+			if(a[i]%2 != 0) {
+				c[j] = a[i];
+				j++;
+			}
+		}
+		System.out.println(Arrays.toString(c));
 
 		scan.close();
 	}

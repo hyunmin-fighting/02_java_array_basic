@@ -76,50 +76,7 @@ public class ArrayEx17_정답_미완____________________________________________
 					turn = 2;
 			}
 			
-			//가로
-			for(int i=0; i<9; i+=3) {
-				if(games[i] == "[O]" && games[i+1] == "[O]" && games[i+2] == "[O]") {
-					System.out.println("p1 Win"); 
-					isRun = false;
-				}
-				else if(games[i] == "[X]" && games[i+1] == "[X]" && games[i+2] == "[X]") {
-					System.out.println("p2 Win"); 
-					isRun = false;			
-				}
-			}
-			
-			//세로
-			for(int i=0; i<9; i+=3) {
-				if(games[i] == "[O]" && games[i+3] == "[O]" && games[i+6] == "[O]") {
-					System.out.println("p1 Win"); 
-					isRun = false;
-				}
-				else if(games[i] == "[X]" && games[i+3] == "[X]" && games[i+6] == "[X]") {
-					System.out.println("p2 Win"); 
-					isRun = false;
-				}
-			}
-			//대각
-			if(games[0] == "[O]" && games[4] == "[O]" && games[8] == "[O]") {
-				System.out.println("p1 Win"); 
-				isRun = false;
-			}
-			if(games[0] == "[X]" && games[4] == "[X]" && games[8] == "[X]") {
-				System.out.println("p2 Win"); 
-				isRun = false;
-			}
-			if(games[2] == "[O]" && games[4] == "[O]" && games[6] == "[O]") {
-				System.out.println("p1 Win"); 
-				isRun = false;
-			}
-			if(games[2] == "[X]" && games[4] == "[X]" && games[6] == "[X]") {
-				System.out.println("p2 Win"); 
-				isRun = false;
-			}
-			
-			
-			
-			
+		
 			if(turn == 2) {
 				while(true) {
 					System.out.print("[p2]인덱스 입력 : ");
@@ -151,6 +108,9 @@ public class ArrayEx17_정답_미완____________________________________________
 				System.out.println();
 				turn = 1;
 			}
+			
+	/*		
+			
 			//가로
 			for(int i=0; i<9; i+=3) {
 				if(games[i] == "[O]" && games[i+1] == "[O]" && games[i+2] == "[O]") {
@@ -192,7 +152,7 @@ public class ArrayEx17_정답_미완____________________________________________
 				isRun = false;
 			}
 			
-			
+	*/		
 		
 		}
 		scan.close();
